@@ -1,7 +1,6 @@
 package lru
 
 import (
-	"fmt"
 	"strconv"
 	"testing"
 )
@@ -38,7 +37,4 @@ func TestSet(t *testing.T) {
 	if _, isExist := lru.Get("1"); isExist {
 		t.Fatalf("the element wasn't removed")
 	}
-
-	fmt.Printf("%+v\n", lru)
-
 }
